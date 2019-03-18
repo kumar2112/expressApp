@@ -60,7 +60,7 @@ app.post('/login', function (request, response){
       var uname =  request.body.username;
       var pwd=request.body.password;
       if (uname==="kumar" && pwd==="1234") {
-          response.send("Thank you we have successfully recieve your request");
+          response.redirect("quotelisting");
 
       }else{
 				  response.send("Invalid Login");
